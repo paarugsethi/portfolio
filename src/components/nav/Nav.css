@@ -1,26 +1,37 @@
 nav{
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
+    background: var(--color-bg);
     padding: .7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
+    /* position: fixed; */
     display: flex;
-    gap: .8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backdrop-filter: blur(100px);
 }
 
 nav a{
-    background: transparent;
-    padding: .9rem;
+    /* background: transparent; */
+    padding: .6rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
+    width: fit-content;
+}
+
+nav p{
+    font-size: .8rem;
+    color: var(--color-light);
+    margin: 0%;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 nav a:hover{
